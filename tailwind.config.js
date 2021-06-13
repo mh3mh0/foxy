@@ -11,7 +11,4 @@ module.exports = {
       roman: "upper-roman",
     },
   },
-  extend: {
-    font1: ["Cabin Sketch", cursive],
-  },
 };
