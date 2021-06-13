@@ -14,7 +14,7 @@ const addNewImage = () => {
   image.dataset.src = `https://randomfox.ca/images/${randomNumber()}.jpg`;
   image.className =
     "mt-8 mx-auto rounded-md bg-yellow-200 border-8 border-gray-400 shadow-2xl p-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 object-fill";
-  image.width = "320";
+  image.width = "300";
 
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("p-2");
