@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Web site created using create-snowpack-app"
-    />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/foxi.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-snowpack-app" />
+  <!--
       Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
       Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
 
       More about config options:
       - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
     -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="%PUBLIC_URL%/_dist_/index.css"
-    />
-    <title>Snowpack & Tailwind App</title>
-  </head>
-  <body>
-    <!--
-      This HTML file is a template.
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/_dist_/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
 
-      Start modyfing from here.
-    -->
-    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
-        <p
-          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
-        >
-          Snowpack
-        </p>
-        <h3
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-        >
-          Tailwind template
-        </h3>
-        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
-          Use this template to build awesome websites using Snowpack and
-          Tailwind. It also includes Prettier and automatic publish to GitHub
-          pages using GitHub Actions. Learn more:
-        </p>
-        <ul
-          class="text-xl leading-7 sm:flex justify-around sm:max-w-2xl sm:mx-auto mt-10"
-        >
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://snowpack.dev" target="_blank">snowpack.dev</a>
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://tailwindcss.com" target="_blank"
-              >tailwindcss.com</a
-            >
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a
-              href="https://docs.github.com/en/free-pro-team@latest/actions"
-              target="_blank"
-              >GitHub Actions</a
-            >
-          </li>
-        </ul>
-        <p class="mt-14 text-xl leading-7 text-gray-500">Start using it:</p>
-        <div class="my-5 bg-gray-800 p-5 text-white">
-          <code>
-            npx create-snowpack-app my-app --template snowpack-template-tailwind
-          </code>
-        </div>
-        <p class="mt-16 text-xl leading-7 text-gray-500 underline">
-          <a href="https://github.com/jonalvarezz/snowpack-template-tailwind"
-            >See on GitHub</a
-          >
-        </p>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+  <title>Snowpack & Tailwind App</title>
+
+
+
+</head>
+
+<body class="bg-yellow-200 flex flex-col h-screen justify-between">
+
+  <header class="bg-gray-900 mb-0 max-w-screen px-2 bg-secondary flex justify-between items-center">
+    <p class="mx-4 text-6xl text-blue-200 font1 m-2">Foxes
+      Around!</p>
+    <img class="mx-4 h-14 w-14 " src="./globe.ico">
+  </header>
+
+  <div class="mb-auto py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h3 class="font1 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+        Foxy and friends
+      </h3>
+      <img class="mx-auto" src="./foxi.ico">
+      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+        Let's see Foxy's friends. This nice wolf has many friends worldwide, and we got some pics of them in their
+        natural environment. From our experiences before, it is not easy to get these so cool pics. We have been
+        investing a lot of our time finding each habitat and not interrupting their normal day. Let's check it out of
+        them and have fun.
+        <br><br>
+        <b>Please, remember to be nice to the animals and their environment around, <em><strong>don't be rude to
+              them.</strong></em></b>
+      </p>
+
+      <div class="font1 pb-4 mb-auto m-10 px-4 flex-col gap-4 md:flex-row inline-flex justify-center">
+        <button id="get-image"
+          class="shadow-xl focus:outline-none focus:ring focus:ring-offset-4 focus:ring-offset-yellow-200 focus:ring-yellow-500 p-3 bg-yellow-500 rounded text-gray-800 font-bold hover:bg-gray-800 hover:text-yellow-500 hover:-translate-y-2 transform transition">Add
+          Image</button>
+        <button id="delete-image"
+          class="shadow-xl focus:outline-none focus:ring focus:ring-offset-4 focus:ring-offset-yellow-200 focus:ring-red-400 p-3 bg-red-400 rounded text-gray-800 font-bold hover:bg-gray-800 hover:text-red-400 hover:-translate-y-2 transform transition">Delete
+          Image</button>
+        <button id="delete-all"
+          class="shadow-xl focus:outline-none focus:ring focus:ring-offset-4 focus:ring-offset-yellow-200 focus:ring-green-400 p-3 bg-green-400 rounded text-gray-800 font-bold hover:bg-gray-800 hover:text-green-400 hover:-translate-y-2 transform transition">Delete
+          All</button>
       </div>
     </div>
+    <div id="images" class="md:flex flex-wrap gap-32"></div>
+  </div>
 
-    <!-- Add more scripts here -->
-    <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
-  </body>
+  <footer class="text-gray-500 bg-gray-900 mb-0 max-w-screen fixed-bottom">
+    <div class="list-none md:flex md:flex-row-reverse justify-around">
+      <div class="mt-4 font1 ml-8">
+        <li class="hover:text-blue-600 cursor-pointer"><i class="fa fa-facebook"></i> @Foxy</li>
+        <li class="hover:text-blue-300 cursor-pointer"><i class="fa fa-twitter"></i> @Foxy</li>
+        <li class="hover:text-pink-300 cursor-pointer"><i class="fa fa-instagram"></i> @Foxy</li>
+      </div>
+      <ul class="list-none font1 mt-4 mb-4 ml-8">
+        <li>Support</li>
+        <li>About us</li>
+        <li>Register</li>
+        <li>Privacy Policy </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- Add more scripts here -->
+  <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
 </html>

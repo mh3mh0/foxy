@@ -1,3 +1,8 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "tailwindcss/dist/base.css";
+@import "tailwindcss/dist/components.css";
+@import "tailwindcss/dist/utilities.css";
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+
+.font1 {
+  font-family: "Cabin Sketch", cursive;
+}
